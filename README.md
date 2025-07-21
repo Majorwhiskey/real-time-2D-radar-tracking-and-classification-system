@@ -1,21 +1,21 @@
 # Real-Time Radar Target Tracking and Classification
 
-This project implements a simulated real-time 2D radar tracking and classification system using:
+This project simulates radar target tracking using Kalman and Particle Filters, and classifies targets based on motion features using SVM.
 
-- Kalman Filter for tracking
-- Particle Filter for nonlinear tracking
-- SVM for motion classification (fast vs slow)
-- Real-time visualization using matplotlib animation
+## Features
+- 3D Kalman Filter tracking
+- 2D Particle Filter for nonlinear motion
+- SVM-based motion classification
+- Real-time 3D plotting
+- Synthetic target simulation
 
 ## Files
-- `kalman_tracker.py`: Kalman filter implementation
-- `particle_tracker.py`: Particle filter implementation
-- `simulate_targets.py`: Target motion simulation
-- `classify_targets.py`: SVM training and testing
-- `utils.py`: Shared functions for motion and plotting
-- `visualization.py`: Live radar visualization
+- `kalman_tracker.py`: Kalman Filter logic
+- `particle_tracker.py`: Particle Filter logic
+- `simulate_targets.py`: Target motion simulator
+- `classify_targets.py`: SVM training and inference
+- `utils.py`: Distance and plotting tools
 
-## Getting Started
+## Install
 ```bash
 pip install -r requirements.txt
-python visualization.py
